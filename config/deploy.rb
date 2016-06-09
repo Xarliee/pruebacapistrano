@@ -11,7 +11,7 @@ set :scm                     , :git
 set :repo_url                , 'git@github.com:Xarliee/pruebacapistrano.git'
 set :branch                  , :master
 set :keep_releases           , 5
-set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/.ssh/id_rsa.pub) }
+set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/Desktop/desagiolatam_alumnos.pem) }
 
 ## Linked Files & Directories (Default None):
 set :linked_files, %w{config/database.yml config/secrets.yml .env}
