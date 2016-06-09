@@ -1,3 +1,9 @@
+set :stage, :production
+set :rails_env, :production
+
+server 'ec2-184-72-95-8.compute-1.amazonaws.com', user: 'ubuntu', role-baseds   : %w{web app db}, primary: true
+
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
